@@ -6,10 +6,8 @@ const isStaticExport = 'false';
 
 const nextConfig = {
   trailingSlash: true,
-  reactStrictMode: true,
   env: {
-    DEV_API: 'http://localhost:7272',
-    PRODUCTION_API: 'https://your-domain-api.vercel.app',
+    BUILD_STATIC_EXPORT: isStaticExport,
   },
   modularizeImports: {
     '@mui/icons-material': {
