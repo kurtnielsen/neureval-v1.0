@@ -26,5 +26,11 @@
     "files": [
       "static/chunks/_app-pages-browser_src_components_animate_features_ts.js"
     ]
+  },
+  "components/chart/chart.tsx -> react-apexcharts": {
+    "id": "components/chart/chart.tsx -> react-apexcharts",
+    "files": [
+      "static/chunks/_app-pages-browser_node_modules_react-apexcharts_dist_react-apexcharts_min_js.js"
+    ]
   }
 }

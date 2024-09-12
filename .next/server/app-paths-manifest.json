@@ -1,3 +1,8 @@
 {
-  "/(home)/page": "app/(home)/page.js"
+  "/dashboard/page": "app/dashboard/page.js",
+  "/dashboard/tour/page": "app/dashboard/tour/page.js",
+  "/dashboard/file/page": "app/dashboard/file/page.js",
+  "/auth/jwt/sign-in/page": "app/auth/jwt/sign-in/page.js",
+  "/dashboard/permission/page": "app/dashboard/permission/page.js",
+  "/dashboard/kanban/page": "app/dashboard/kanban/page.js"
 }
