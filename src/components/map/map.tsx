@@ -1,12 +1,16 @@
+import { forwardRef } from 'react';
 import type { MapRef, MapProps } from 'react-map-gl';
 
 import MapGL from 'react-map-gl';
-import { forwardRef } from 'react';
 
 import { CONFIG } from 'src/config-global';
 
 // ----------------------------------------------------------------------
 
-export const Map = forwardRef<MapRef, MapProps>(({ ...other }, ref) => (
-  <MapGL ref={ref} mapboxAccessToken={CONFIG.mapboxApiKey} {...other} />
-));
+// @ts-ignore
+export const Map = forwardRef<
+  MapRef,
+  Omit<MapProps, 'projection'> & { projection?: MapProps['projection'] }
+
+  // @ts-ignore
+>(({ ...other }, ref) => <MapGL ref={ref} mapboxAccessToken={CONFIG.mapboxApiKey} {...other} />);
